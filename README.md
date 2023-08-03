@@ -50,6 +50,10 @@ mock==4.0.3
 ```
 
 3. Run the application:
+The defualt settings (BatchSize==edge, BatchSizeS==serverless):
+```python
+BatchSize=20, BatchSizeS=2, Memory=1024, SLO=1, Timeout=0.4
+```
 
 ```bash
 # edge side preparing
