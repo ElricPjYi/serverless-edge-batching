@@ -42,18 +42,18 @@ def create_client(
         access_key_secret=access_key_secret
     )
     # 访问的域名
-    config.endpoint = f'1233067645534960.cn-shanghai.fc.aliyuncs.com'
+    config.endpoint = f'your_url'
     return FC_Open20210406Client(config)
 
 
 #
 
 # 本地测试
-# url = "http://127.0.0.1:5000"
+
 # orin/NX测试
-# url = "http://192.168.123.101:5000"
+
 # 云测试
-# url = "https://image-test-ivahoqqdpb.cn-shanghai.fcapp.run"
+
 # 初始化每个batch的文件列表
 # def sendrequest(batch_size,mem):
 def sendrequest(batch_size):
@@ -73,7 +73,7 @@ def sendrequest(batch_size):
     # batch_size = 20
     # memory=32768
     req_list = []
-    client = create_client('LTAI5tCxfqNQR8vbuXyhX6q6', 'JpA0zRFc1tboqPriL5riUXOi56bitw')
+    client = create_client('your-access-key', 'your-access-key-password')
     runtime = util_models.RuntimeOptions()
     # rps=10
     # 以下为测试并发用的代码，如果是基于rps则不需要这些
@@ -185,7 +185,7 @@ def sendrequest(batch_size):
 
 # 更新serverless上的内存信息，会有一定延迟
 def update_s(memory):
-    client = create_client('LTAI5tCxfqNQR8vbuXyhX6q6', 'JpA0zRFc1tboqPriL5riUXOi56bitw')
+    client = create_client('your-access-key', 'your-access-key-password')
     runtime = util_models.RuntimeOptions()
     update_function_headers = fc__open_20210406_models.UpdateFunctionHeaders()
     update_function_request = fc__open_20210406_models.UpdateFunctionRequest(
