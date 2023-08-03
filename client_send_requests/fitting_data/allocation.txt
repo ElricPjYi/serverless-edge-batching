@@ -1,0 +1,26 @@
+3 1 1 edge
+3 2 1 edge
+3 4 1 edge
+3 8 8 1 1024 edge+serverless
+3 16 8 1 1024 edge+serverless
+3 50 8 1 1024 edge+serverless
+3 200 8 1 1024 edge+serverless
+3 200 8 1 1024 edge+serverless
+3 20000 8 8 1024 edge+serverless
+6 1 1 edge
+6 2 1 edge
+6 4 1 edge
+6 8 16 1 1024 edge+serverless
+6 50 16 1 1024 edge+serverless
+6 500 16 8 1024 edge+serverless
+6 5000 16 16 1024 edge+serverless
+6 50000 16 16 1024 edge+serverless
+10 4 1 edge
+10 8 32 1 1024 edge+serverless
+10 16 32 1 1024 edge+serverless
+10 160 32 8 1024 edge+serverless
+10 1600 32 32 1024 edge+serverless
+20 16 64 1 1024 edge+serverless
+20 160 64 32 1024 edge+serverless
+20 1600 64 64 1024 edge+serverless
+
