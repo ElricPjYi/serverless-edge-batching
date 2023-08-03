@@ -26,48 +26,52 @@ This project is a machine learning inference request scheduling engine developed
 1. Clone the project to your local machine:
 
 ```bash
-git clone https://github.com/your_username/project.git
-cd project
+git clone https://github.com/ElricPjY/serverless-edge-batching.git
+cd serverless-edge-batching
 ```
 
 2. Install the required dependencies:
-
 ```bash
-pip install flask
-# Additional steps to install Serverless dependencies
+flask
+imageai==3.0.3
+pillow>=7.0.0 
+numpy>=1.18.1
+opencv-python>=4.1.2 
+torch>=1.9.0 
+--extra-index-url https://download.pytorch.org/whl/cu102 
+torchvision>=0.10.0 
+--extra-index-url https://download.pytorch.org/whl/cu102 
+pytest==7.1.3 
+tqdm==4.64.1 
+scipy>=1.7.3 
+matplotlib>=3.4.3 
+mock==4.0.3
+
 ```
 
 3. Run the application:
 
 ```bash
-python app.py
+# edge side preparing
+python main.py
+
+# client side
+python 
 ```
 
 ## Usage Example
 
 Below is an example demonstrating how to use the scheduling engine:
-
+(If you have completed the allocation of your machine learning application on your edge device and serverless platform:)
 ```python
-# Import necessary modules
-from engine import Scheduler
+# client side
 
-# Create a scheduler instance
-scheduler = Scheduler()
-
-# Set up model deployment and Serverless functions
-scheduler.setup_model_deployment()
-
-# Start the scheduler
-scheduler.start()
 ```
 
 ## Contribution
 
 We welcome contributions, feedback, and suggestions for this project. If you wish to contribute, please feel free to submit a Pull Request, and we'll review it promptly.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 
@@ -79,11 +83,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 We extend our gratitude to the following projects for their inspiration and support:
 
 - [Flask](https://flask.palletsprojects.com/)
-- [Serverless Platform](https://www.serverless.com/)
+- [Ali Function Compute Serverless Platform](https://www.aliyun.com/product/fc)
 
-## Frequently Asked Questions
 
-If you have any questions, please refer to our [FAQ](FAQ.md).
-
----
-Note: The above README is a simple template. Please adjust and expand it according to your actual project details.
